@@ -1,0 +1,43 @@
+.aside {
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Permet le défilement si le contenu dépasse la hauteur */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transitions douces */
+  }
+  
+  .aside ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .aside li {
+    margin: 20px 0;
+  }
+  
+  .aside a {
+    color: var(--white-ish);
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .aside a:hover {
+    background-color: var(--white-ish);
+    color: var(--black-ish);
+  }
+  
+  .aside a::before {
+    content: '►';
+    margin-right: 10px;
+    color: var(--white-ish);
+  }
+
+  .aside a.is-active::before {
+    color: var(--schtroumpf);
+  }
+  

@@ -1,0 +1,44 @@
+.skillCard {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 10rem;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: var(--grey-ish);
+    margin: 10px;
+    text-decoration: none;
+  }
+  
+    .skillCardLogo {
+      width: 30%;
+      height: auto;
+      filter: grayscale(100%);
+      transition: filter 0.3s;
+    }
+
+    .skillCard p {
+      color: var(--white-ish);
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+
+  .skillCard:hover p {
+    color: var(--white-ish);
+  }
+  
+  .skillCard:hover {
+    transform: translateY(-10px);
+    background: var(--schtroumpf);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+    .skillCard:hover .skillCardLogo {
+      filter: grayscale(0%);
+    }
+  

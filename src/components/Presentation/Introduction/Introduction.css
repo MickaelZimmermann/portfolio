@@ -1,0 +1,32 @@
+/* Bloc gauche */
+
+#introduction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
+    font-size: 2rem;
+}
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+        p {
+            margin: 0;
+        }
+
+    .name {
+        color: var(--schtroumpf);
+        font-weight: 800;
+    }
+
+/* Bloc droit  */
+
+#introduction img {
+    width: 30%;
+    border: 2px solid var(--schtroumpf);
+    border-radius: 50%;
+}

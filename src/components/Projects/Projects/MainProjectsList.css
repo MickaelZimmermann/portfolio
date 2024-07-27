@@ -1,0 +1,50 @@
+.mainProjectCard {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    height: 25rem;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: var(--grey-ish);
+    margin: 10px;
+    text-decoration: none;
+    color: var(--white-ish);
+    cursor: pointer;
+  }
+  
+    .mainProjectCard img {
+      width: 40%;
+      height: auto;
+      transition: filter 0.3s;
+    }
+
+    .mainProjectCard p {
+      font-size: 1.2rem;
+      margin: 1rem 3rem;
+      text-align: center;
+    }
+
+    .projectDescriptionCard {
+      font-size: 0.9rem;
+    }
+
+  .mainProjectCard:hover p {
+    color: var(--white-ish);
+  }
+  
+  .mainProjectCard:hover {
+    transform: translateY(-10px);
+    background: var(--schtroumpf);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  @media screen and (min-width: 968px) {
+    .mainProjectCard{
+      width: 40%;
+    }
+  }

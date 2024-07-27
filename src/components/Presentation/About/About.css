@@ -1,0 +1,23 @@
+#about {
+    display: flex;
+    flex-direction: column;
+}
+
+    .aboutHeader {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+        .blueString {
+            width: 25%;
+            height: 3px;
+            background-color: var(--schtroumpf);
+            border-radius: 25px;
+        }
+
+
+    #about p {
+        font-size: larger;
+    }

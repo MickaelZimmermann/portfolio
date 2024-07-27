@@ -1,0 +1,19 @@
+#skillsCategories {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+    #skillsCategories h2 {
+        margin-bottom: 1rem;
+    }
+    #skillsCategories h3 {
+        margin-top: 2rem;
+    }
+    
+    .skills {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
