@@ -21,7 +21,7 @@
     background-color: var(--black-ish);
     padding: 3rem;
     border-radius: 5px;
-    width: 40%;
+    width: 50%;
     height: auto;
     max-width: 90%;
     max-height: 80vh;
@@ -70,3 +70,10 @@
       cursor: pointer;
       font-size: 2rem;
     }
+
+
+@media (max-width: 1000px) {
+  .modalContent {
+      width: 80%;
+  }
+}

@@ -23,11 +23,11 @@ const Projects: React.FC = () => {
               (" ~----( ~   Y.  )
           ~~~~~~~~~~~~~~~~~~~~~~~~~~`)
   return (
-    <div>
+    <>
       <MainProjectsList />
       <SmallProjectsList />
       <NotFoundPages />
-    </div>
+    </>
   );
 };
 

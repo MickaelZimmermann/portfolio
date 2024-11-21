@@ -11,7 +11,7 @@ const MainProjectsList: React.FC = () => {
           {mainProjectsList.map((project, index) => (
           <ProjectCard 
             key={ index } divClassName='mainProjectCard' 
-            logo={ project.src } 
+            logo={ project.logo } 
             name={ project.name } 
             resume={ project.resume } 
             description={ project.description } 

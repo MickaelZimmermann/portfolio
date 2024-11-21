@@ -1,0 +1,29 @@
+
+.NFP_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+    .NFP_intro {
+        max-width: 90%;
+        font-size: larger;
+        text-align: justify;
+        line-height: 1.8;
+        margin: 1rem 0;
+        padding: 0 1rem;
+    }
+
+    .NFP_example {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+@media (max-width: 1000px) {
+    .NFP_gif {
+        max-width: 80%;
+    }
+}

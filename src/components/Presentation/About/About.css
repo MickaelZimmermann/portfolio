@@ -18,6 +18,84 @@
         }
 
 
-    #about p {
-        font-size: larger;
+        #about p {
+            font-size: larger;
+            text-align: justify;
+            max-width: 600px;
+            line-height: 1.8;
+            margin: 1rem 0;
+            padding: 0 1rem;
+        }
+
+.aboutSegments {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5rem;
+    max-width: 1200px;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+    /* Left side */
+    .aboutLeft {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 600px;
+        flex: 1;
     }
+
+        .aboutCards {
+            display: grid;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            justify-content: initial;
+            grid-template-columns: repeat(3, 140px);
+        }
+
+            .aboutCard {
+                text-align: center;
+                padding: 1rem 1.25rem;
+                transition: transform 0.3s, box-shadow 0.3s;
+                background-color: var(--grey-ish);
+                border-radius: 15px;
+            }
+
+            .aboutCard:hover {
+                transform: translateY(-10px);
+                background: var(--schtroumpf);
+                box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+            }
+
+    /* Right side */
+    .aboutFace {
+        border-radius: 1.5rem;
+        justify-self: center;
+        width: 350px;
+    }
+
+/* Styles pour les fenêtres ≤1460px */
+@media (max-width: 1460px) {
+    .aboutSegments {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+
+    .aboutRight {
+        max-width: 400px;
+        order: -1;
+    }
+
+    .aboutCards {
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .aboutLeft {
+        max-width: 500%;
+        align-items: stretch;
+    }
+}

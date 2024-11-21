@@ -1,5 +1,7 @@
 .aside {
     position: fixed;
+    top: 30;
+    right: 0;
     width: 20%;
     height: 100%;
     padding: 20px;
@@ -33,7 +35,7 @@
   
   .aside a::before {
     content: '►';
-    margin-right: 10px;
+    margin-right: 1rem;
     color: var(--white-ish);
   }
 
@@ -41,3 +43,8 @@
     color: var(--schtroumpf);
   }
   
+  @media (max-width: 1460px) {
+    .aside {
+      visibility: hidden;
+    }
+  }

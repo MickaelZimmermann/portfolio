@@ -5,7 +5,7 @@ import './Introduction.css'
 const Introduction: React.FC = () => {
   return (
     <section id='introduction'>
-      <img src={PPP} alt="Zimmick" />
+      <img src={PPP} alt="Zimmick's Avatar" />
       <div className='intro'>
         <p>
           Bonjour et bienvenue ! 
